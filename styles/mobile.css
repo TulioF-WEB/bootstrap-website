@@ -20,4 +20,12 @@
     height: 42px;
     border: 1px solid var(--primary-color);
   }
+    
+  .icon-section .row {
+    flex-direction: column;
+  }
+  
+  .icon-section .col-md-4 {
+    margin-bottom: 30px;
+  }
 }
