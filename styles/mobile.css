@@ -1,0 +1,18 @@
+@media screen and (max-width: 768px) {
+  /* for sm and default */
+
+  #introduction-section {
+    background: url(../assets/hero-cover1.jpg),
+      linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+    background-position: 80%;
+    height: 670px;
+    padding: 0 5%;
+  }
+
+  .icon-section .row {
+    flex-direction: column;
+  }
+  .icon-section .col-md-4 {
+    margin-bottom: 30px;
+  }
+}

@@ -1,0 +1,25 @@
+@media screen and (min-width: 769px) {
+  /* for md and above */
+  #introduction-section {
+    background: url(../assets/hero-cover1.jpg),
+      linear-gradient(to right, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0) 100%);
+    background-position: 80%;
+    height: 670px;
+    padding: 0 15%;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  .blue-btn1 {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    font-size: 14px;
+    font-weight: bolder;
+    min-width: 220px;
+    height: 52px;
+    border: none;
+    border-radius: 5px;
+  }
+}
