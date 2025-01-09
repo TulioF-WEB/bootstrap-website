@@ -34,16 +34,43 @@
   height: 670px;
 }
 
+.intro-p {
+  font-size: 20px;
+  font-weight: normal;
+  color: var(--light-text-color);
+}
+
+.blue-btn2 {
+  background-color: var(--primary-color);
+  color: var(--light-text-color);
+  font-size: 14px;
+  font-weight: bolder;
+  width: 186px;
+  height: 52px;
+  border: none;
+  border-radius: 37px;
+}
+
+.transp-btn {
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: bolder;
+  width: 157px;
+  border-radius: 37px;
+}
+
 .icon-section {
   background-color: #1a1a2e;
   color: white;
   padding: 50px 0;
   text-align: center;
 }
+
 .icon-placeholder {
   height: 50px;
   margin-bottom: 15px;
 }
+
 .dual-icon .icon-placeholder {
   margin-bottom: 5px;
 }
