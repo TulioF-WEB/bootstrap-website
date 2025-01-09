@@ -8,4 +8,11 @@
     height: 670px;
     padding: 0 5%;
   }
+
+  .icon-section .row {
+    flex-direction: column;
+  }
+  .icon-section .col-md-4 {
+    margin-bottom: 30px;
+  }
 }
