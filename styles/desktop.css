@@ -22,4 +22,16 @@
     border: none;
     border-radius: 5px;
   }
+
+  .intro-title {
+    font-size: 58px;
+    font-weight: bolder;
+    color: var(--light-text-color);
+  }
+
+  .transp-btn {
+    color: var(--light-text-color);
+    height: 52px;
+    border: 1px solid white;
+  }
 }

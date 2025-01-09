@@ -8,4 +8,16 @@
     height: 670px;
     padding: 0 5%;
   }
+
+  .intro-title {
+    font-size: 40px;
+    font-weight: bolder;
+    color: var(--light-text-color);
+  }
+
+  .transp-btn {
+    color: var(--primary-color);
+    height: 42px;
+    border: 1px solid var(--primary-color);
+  }
 }
