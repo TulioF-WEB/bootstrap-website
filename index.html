@@ -9,7 +9,14 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/desktop.css" />
+    <link rel="stylesheet" href="./styles/mobile.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,5 +25,46 @@
     />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <section id="introduction-section" class="text-white pt-3 pt-xl-5">
+        <nav class="container mw-100 gap-4">
+          <div class="row">
+            <h1 class="h4 fw-semibold col-3 d-flex align-items-end mt-2">BrandName</h1>
+            <!-- The contents for lg and below -->
+            <div class="col-9 d-flex justify-content-end">
+              <ul class="mb-0 d-flex justify-content-between align-items-center gap-4">
+                <li>
+                  <a href="#"><img src="./assets/icn search .icn-xs.png" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="./assets/icn shopping-cart .icn-xs.png" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="./assets/icn menu .icn-xs.png" /></a>
+                </li>
+              </ul>
+            </div>
+            <!-- The contents for xl and xxl -->
+            <ul
+              class="col-5 mb-0 d-flex justify-content-start gap-md-1 gap-lg-2 align-items-center d-none"
+            >
+              <li class="me-3"><a href="#" class="text-white text-decoration-none">Home</a></li>
+              <li class="me-3"><a href="#" class="text-white text-decoration-none">About</a></li>
+              <li class="me-3"><a href="#" class="text-white text-decoration-none">Services</a></li>
+              <li class="me-3"><a href="#" class="text-white text-decoration-none">Contact</a></li>
+            </ul>
+            <div class="col-4 d-flex justify-content-center gap-md-3 gap-lg-4 d-none">
+              <a href="#" class="d-flex text-decoration-none text-white align-items-center"
+                >Login</a
+              >
+              <button class="blue-btn1 d-flex justify-content-center align-items-center gap-2">
+                Become a member <i class="fa-solid fa-arrow-right" style="color: #ffffff"></i>
+              </button>
+            </div>
+          </div>
+        </nav>
+      </section>
+    </main>
+  </body>
 </html>
