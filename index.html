@@ -19,6 +19,125 @@
         .dual-icon .icon-placeholder {
             margin-bottom: 5px;
         }
+        .testimonials-section {
+            background-color: #8EC2F2;
+            padding: 60px 0;
+            text-align: center;
+        }
+        .testimonial-card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        .testimonial-card .user-icon {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        .testimonial-card .content {
+            text-align: left;
+        }
+        .testimonial-card .stars {
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        .testimonial-card h5 {
+            margin: 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .testimonial-card span {
+            display: block;
+            font-size: 14px;
+            color: #777;
+        }
+        .testimonial-card p {
+            font-size: 14px;
+            color: #555;
+            margin: 10px 0 0;
+        }
+        .industry-section {
+            background-color: #252B42;
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+        .industry-section h2 {
+            font-size: 36px;
+            font-weight: bold;
+        }
+        .industry-section p {
+            max-width: 600px;
+            margin: 0 auto 40px auto;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .project-card {
+            position: relative;
+            background-color: #000;
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 331px;
+            height: 452px;
+            display: flex;
+            align-items: flex-end;
+            color: white;
+            margin: 0 auto;
+        }
+        .project-card .card-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* background: rgba(0, 0, 0, 0.5); */
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 15%, rgba(56, 56, 56, 0.84) 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 20px;
+        }
+        .project-card span {
+            font-size: 14px;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        .project-card h5 {
+            font-size: 18px;
+            font-weight: 400;
+            margin: 0 0 10px 0;
+            text-align: left;
+        }
+        .project-card .btn {
+            background-color: #00aaff;
+            color: white;
+            font-size: 14px;
+            border: none;
+            border-radius: 20px;
+            padding: 8px 24px;
+            align-self: flex-start;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+        .project-card .btn:hover {
+            background-color: #008ecc;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+        }
+        .row.g-4 > div {
+            padding-left: 15px; /* Adds spacing between cards */
+            padding-right: 15px; /* Adds spacing between cards */
+        }
         @media (max-width: 768px) {
             .icon-section .row {
                 flex-direction: column;
@@ -26,7 +145,71 @@
             .icon-section .col-md-4 {
                 margin-bottom: 30px;
             }
-        }
+            .testimonials-section h2 {
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+            .testimonials-section h2::before {
+                content: "What Clients Say";
+                display: block;
+                /* font-size: inherit; */
+                font-size: 50px;
+                font-weight: bold;
+                color: white;
+                text-align: inherit;
+                visibility: visible;
+            }
+            .testimonials-section h2 {
+                visibility: hidden;
+            }
+            .testimonials-section p {
+                font-size: 16px;
+                line-height: 1.5;
+                margin-bottom: 30px;
+                color: white;
+            
+            }
+            .testimonial-card {
+                padding: 20px;
+                margin-bottom: 30px !important;
+            }
+            .testimonials-section .user-icon {
+                display: none;
+            }
+            .testimonials-section .card-body {
+                gap: 20px;
+            }
+            .project-card h5 {
+        font-weight: 700; 
+    }
+    .industry-section h2 {
+        visibility: hidden; /* hide original text */
+        position: relative;
+        margin: 0 auto; /* Center align the pseudo-element */
+        width: 50%; 
+    }
+    .industry-section h2::before {
+        content: "We Are Optimists Who Love To Work Together"; 
+        visibility: visible; 
+        position: relative;
+        display: block;
+        font-size: 32px; /* text size for mobile */
+        font-weight: bold; 
+        text-align: center; 
+        line-height: 1.5; /* improve readability */
+        width: 100%; 
+        /* margin: 0 auto 30px;  */
+        word-wrap: break-word; 
+    }
+    .industry-section {
+        padding-top: 140px; /* space above the content */
+        padding-bottom: 40px; /* maintain bottom spacing */
+    }
+    .industry-section p {
+        margin-top: 20px; 
+        text-align: center; /* center-align the paragraph */
+    }
+}
     </style>
 </head>
 <body>
@@ -64,6 +247,114 @@
             </div>
         </div>
     </section>
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 style="color: white; font-weight: bold;">Industry</h2>
+            <p class="mb-5" style="max-width: 600px; margin: 0 auto; color: white;">
+                Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics
+            </p>
+            <div class="row justify-content-center">
+                <!-- Card 1 -->
+                <div class="col-md-5 col-lg-4 mx-5">
+                    <div class="card shadow border-0 position-relative" style="border-radius: 5px; padding-top: 50px;">
+                        <div class="position-absolute top-10 start-0 translate-middle">
+                            <img src="assets/user1.svg" alt="Regina Miles" class="user-icon"
+                                style="width: 72px; height: 72px;" />
+                        </div>
+                        <div class="card-body">
+                            <div style="text-align: left; margin-left: 35px; margin-top: -35px;">
+                                <h5 class="fw-bold mb-0">Regina Miles</h5>
+                                <small class="text-muted">Designer</small>
+                            </div>
+                            <div class="mt-3">
+                                <div class="text-warning" style="text-align: left; margin-left: 35px;">
+                                    <img src="assets/stars.svg" alt="stars" />
+                                </div>
+                                <p class="mt-2 text-muted" style="text-align: left; padding-left: 35px;">
+                                    This proved to be impossible using the traditional concepts of space and time. Einstein developed a
+                                    new view of time first and then space. This proved to be impossible using the traditional concepts of
+                                    space and time. Einstein developed a new view of time first and then space.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
     
+                <!-- Card 2 -->
+                <div class="col-md-5 col-lg-4 mx-5">
+                    <div class="card shadow border-0 position-relative" style="border-radius: 5px; padding-top: 50px;">
+                        <div class="position-absolute top-10 start-0 translate-middle">
+                            <img src="assets/user2.svg" alt="Regina Miles" class="user-icon"
+                                style="width: 72px; height: 72px;" />
+                        </div>
+                        <div class="card-body">
+                            <div style="text-align: left; margin-left: 35px; margin-top: -35px;">
+                                <h5 class="fw-bold mb-0">Regina Miles</h5>
+                                <small class="text-muted">Designer</small>
+                            </div>
+                            <div class="mt-3">
+                                <div class="text-warning" style="text-align: left; margin-left: 35px;">
+                                    <img src="assets/stars.svg" alt="stars" />
+                                </div>
+                                <p class="mt-2 text-muted" style="text-align: left; padding-left: 35px;">
+                                    This proved to be impossible using the traditional concepts of space and time. Einstein developed a
+                                    new view of time first and then space. This proved to be impossible using the traditional concepts of
+                                    space and time. Einstein developed a new view of time first and then space.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="industry-section">
+        <div class="container">
+            <h2>Industry</h2>
+            <p>Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</p>
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-3 d-flex justify-content-center">
+                    <div class="project-card" style="background-image: url('assets/post1.svg');">
+                        <div class="card-overlay">
+                            <span>Tax Management</span>
+                            <h5>Life Tips From Top Ten Adventure Travelers</h5>
+                            <button class="btn">View Project</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-3 d-flex justify-content-center">
+                    <div class="project-card" style="background-image: url('assets/post2.svg');">
+                        <div class="card-overlay">
+                            <span>Tax Management</span>
+                            <h5>Life Tips From Top Ten Adventure Travelers</h5>
+                            <button class="btn">View Project</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-3 d-flex justify-content-center">
+                    <div class="project-card" style="background-image: url('assets/post3.svg');">
+                        <div class="card-overlay">
+                            <span>Tax Management</span>
+                            <h5>Life Tips From Top Ten Adventure Travelers</h5>
+                            <button class="btn">View Project</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="col-md-3 d-flex justify-content-center">
+                    <div class="project-card" style="background-image: url('assets/post4.svg');">
+                        <div class="card-overlay">
+                            <span>Tax Management</span>
+                            <h5>Life Tips From Top Ten Adventure Travelers</h5>
+                            <button class="btn">View Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
