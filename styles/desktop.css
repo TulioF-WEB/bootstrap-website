@@ -33,6 +33,10 @@
     border: 1px solid white;
   }
 
+  .card-wrapper {
+    margin-top: 100px;
+  }
+
   #form-section {
     min-height: 670px;
     padding: 80px 11% 0 15%;
