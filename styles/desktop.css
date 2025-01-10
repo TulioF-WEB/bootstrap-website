@@ -18,6 +18,7 @@
     font-size: 14px;
     font-weight: bolder;
     min-width: 220px;
+    max-width: 220px;
     height: 52px;
     border: none;
     border-radius: 5px;
@@ -25,13 +26,34 @@
 
   .intro-title {
     font-size: 58px;
-    font-weight: bolder;
-    color: var(--light-text-color);
   }
 
   .transp-btn {
     color: var(--light-text-color);
     height: 52px;
     border: 1px solid white;
+  }
+
+  #form-section {
+    padding: 80px 11% 0 15%;
+  }
+
+  .textarea {
+    width: 594px;
+    border: solid 1px var(--muted-color);
+  }
+
+  .m-left {
+    margin-left: calc(var(--bs-gutter-x) * 0.5);
+  }
+
+  .input-fl {
+    min-width: 285px;
+    height: 50px;
+    border: solid 1px #e6e6e6;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    color: var(--second-text-color);
   }
 }
