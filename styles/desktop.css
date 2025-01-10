@@ -4,8 +4,7 @@
     background: url(../assets/hero-cover1.jpg),
       linear-gradient(to right, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0) 100%);
     background-position: 80%;
-    height: 670px;
-    padding: 0 11% 0 15%;
+    padding: 0 11% 0 20%;
   }
 
   nav a {
@@ -35,6 +34,7 @@
   }
 
   #form-section {
+    min-height: 670px;
     padding: 80px 11% 0 15%;
   }
 
@@ -55,5 +55,10 @@
     background-color: #f9f9f9;
     font-size: 14px;
     color: var(--second-text-color);
+  }
+
+  #contactUs-section {
+    min-height: 142px;
+    padding: 0 11% 0 15%;
   }
 }

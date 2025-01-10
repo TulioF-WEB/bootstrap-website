@@ -39,12 +39,10 @@
   background-size: cover;
   background-blend-mode: overlay;
   background-position: 50%;
-  min-height: 670px;
 }
 
-.intro-title {
-  font-weight: bolder;
-  color: var(--light-text-color);
+#contactUs-section {
+  background-color: var(--light-gray-1);
 }
 
 .intro-p {
@@ -126,4 +124,26 @@ select {
 .textarea::placeholder {
   font-size: 14px;
   color: var(--muted-color);
+}
+
+.contact-title {
+  font-size: 24px;
+  font-weight: bolder;
+  color: var(--text-color);
+}
+
+.contact-p {
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+.blue-btn3 {
+  background-color: var(--primary-color);
+  color: var(--light-text-color);
+  font-size: 14px;
+  font-weight: bolder;
+  width: 160px;
+  height: 52px;
+  border: none;
+  border-radius: 5px;
 }
