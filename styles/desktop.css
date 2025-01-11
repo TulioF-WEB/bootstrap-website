@@ -1,5 +1,6 @@
 @media screen and (min-width: 769px) {
   /* for md and above */
+
   #introduction-section {
     background: url(../assets/hero-cover1.jpg),
       linear-gradient(to right, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0) 100%);
@@ -85,5 +86,9 @@
     font-size: 14px;
     font-weight: 600;
     color: var(--second-text-color);
+  }
+
+  .icon-section {
+    min-height: 435px;
   }
 }
