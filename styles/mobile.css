@@ -1,0 +1,80 @@
+@media screen and (max-width: 768px) {
+  /* for sm and default */
+
+  #introduction-section {
+    background: url(../assets/hero-cover1.jpg),
+      linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%);
+    background-position: 80%;
+    padding: 0 5%;
+  }
+
+  #form-section {
+    background: url(../assets/contact-cover2.png),
+      linear-gradient(to right, rgba(255, 255, 255, 1) 5%, rgba(255, 255, 255, 0) 100%);
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-position-x: 50%;
+    min-height: 918px;
+  }
+
+  .intro-title {
+    font-size: 40px;
+  }
+
+  .transp-btn {
+    color: var(--primary-color);
+    height: 42px;
+    border: 1px solid var(--primary-color);
+  }
+
+  .icon-section .row {
+    flex-direction: column;
+  }
+
+  .icon-section .col-md-4 {
+    margin-bottom: 30px;
+  }
+
+  .card-wrapper {
+    margin-top: 60px;
+  }
+
+  #form-section {
+    padding: 140px 16% 0 16%;
+  }
+
+  .input-fl {
+    width: 96%;
+    height: 50px;
+    border: solid 1px var(--muted-color);
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    color: var(--second-text-color);
+  }
+
+  input::placeholder {
+    color: var(--muted-color);
+  }
+
+  .textarea {
+    width: 96%;
+    border: solid 1px var(--muted-color);
+  }
+
+  .blue-btn1 {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    font-size: 14px;
+    font-weight: bolder;
+    width: 96%;
+    height: 52px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  #contactUs-section {
+    min-height: 302px;
+    padding: 0 16% 0 16%;
+  }
+}

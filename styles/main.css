@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --primary-color: #23a6f0;
+  --secondary-color-1: #40bb15;
+  --secondary-color-2: #3c403d;
+  --background-gradient-1: linear-gradient(90deg, #d71489, #004788);
+  --text-color: #252b42;
+  --second-text-color: #737373;
+  --light-text-color: #ffffff;
+  --dark-background-color: #252b42;
+  --light-background-color: #ffffff;
+  --hover-color: #2a7cc7;
+  --disabled-element-color: #8ec2f2;
+  --muted-color: #bdbdbd;
+  --success-color: #2dc071;
+  --alert-color: #e77c40;
+  --danger-color: #e74040;
+  --light-gray-1: #fafafa;
+  --light-gray-2: #ececec;
+}
+
+#introduction-section {
+  background-size: cover;
+  background-blend-mode: multiply;
+  height: 670px;
+}
+
+#form-section {
+  background: url(../assets/contact-cover1.jpg),
+    linear-gradient(to right, rgba(255, 255, 255, 1) 5%, rgba(255, 255, 255, 0) 100%);
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-position: 50%;
+}
+
+#contactUs-section {
+  background-color: var(--light-gray-1);
+}
+
+.intro-p {
+  font-size: 20px;
+  font-weight: normal;
+  color: var(--light-text-color);
+}
+
+.blue-btn2 {
+  background-color: var(--primary-color);
+  color: var(--light-text-color);
+  font-size: 14px;
+  font-weight: bolder;
+  width: 186px;
+  height: 52px;
+  border: none;
+  border-radius: 37px;
+}
+
+.transp-btn {
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: bolder;
+  width: 157px;
+  border-radius: 37px;
+}
+
+.icon-section {
+  background-color: var(--dark-background-color);
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.icon-placeholder {
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.dual-icon .icon-placeholder {
+  margin-bottom: 5px;
+}
+
+#pricing-section {
+  padding: 100px 0 150px 0;
+  background-color: var(--dark-background-color);
+}
+
+.pricing-title {
+  font-size: 40px;
+  font-weight: bolder;
+  color: var(--light-text-color);
+}
+
+.pricing-p {
+  font-size: 14px;
+  color: var(--light-text-color);
+}
+
+.pricing-card {
+  width: 327px;
+  height: 689px;
+  border-radius: 10px;
+  border: solid 1.5px #dedede;
+  background-color: var(--light-background-color);
+}
+
+.new-tag {
+  width: 90px;
+  height: 90px;
+  font-size: 24px;
+  font-weight: bolder;
+  color: var(--light-text-color);
+  background-color: var(--alert-color);
+  border-radius: 50px;
+  position: absolute;
+  top: -30px;
+  right: 20px;
+}
+
+.card-h3 {
+  font-size: 24px;
+  font-weight: bolder;
+  color: var(--text-color);
+  margin-top: 50px;
+}
+
+.card-p {
+  font-size: 16px;
+  font-weight: bolder;
+  color: var(--second-text-color);
+  margin-top: 35px;
+}
+
+.card-price {
+  font-size: 40px;
+  font-weight: bolder;
+  color: var(--primary-color);
+  margin-top: 35px;
+}
+
+.card-month {
+  font-size: 16px;
+  font-weight: bolder;
+  color: var(--disabled-element-color);
+}
+
+.blue-btn4 {
+  background-color: var(--primary-color);
+  color: var(--light-text-color);
+  font-size: 14px;
+  font-weight: bolder;
+  width: 246px;
+  height: 52px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 35px;
+}
+
+.card-bullet {
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+.form-title {
+  font-size: 40px;
+  font-weight: bolder;
+  color: var(--text-color);
+}
+
+.form-p {
+  font-size: 16px;
+  font-weight: bolder;
+  color: var(--text-color);
+}
+
+.input-fl {
+  min-width: 285px;
+  height: 50px;
+  border: solid 1px #e6e6e6;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  font-size: 14px;
+  color: var(--second-text-color);
+}
+
+select {
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url("../assets/Vector.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center; /* 画像の位置 */
+}
+
+.textarea {
+  height: 140px;
+  background-color: #f9f9f9;
+}
+
+.textarea::placeholder {
+  font-size: 14px;
+  color: var(--muted-color);
+}
+
+.contact-title {
+  font-size: 24px;
+  font-weight: bolder;
+  color: var(--text-color);
+}
+
+.contact-p {
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+.blue-btn3 {
+  background-color: var(--primary-color);
+  color: var(--light-text-color);
+  font-size: 14px;
+  font-weight: bolder;
+  width: 160px;
+  height: 52px;
+  border: none;
+  border-radius: 5px;
+}
