@@ -75,6 +75,16 @@
 
   #contactUs-section {
     min-height: 302px;
-    padding: 0 16% 0 16%;
+    padding: 0 16%;
+  }
+
+  footer > div:first-child {
+    min-height: 272px;
+    padding: 50px 17% 50px 17%;
+  }
+
+  .copyright-wrapper {
+    background-color: var(--dark-background-color);
+    padding: 0 17%;
   }
 }
