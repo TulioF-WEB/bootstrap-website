@@ -1,5 +1,17 @@
 @media screen and (max-width: 768px) {
   /* for sm and default */
+  .side-menu {
+    position: fixed;
+    top: -532px;
+    width: 100%;
+    height: 532px;
+    padding: 0 5%;
+    background-color: var(--dark-background-color);
+    opacity: 0.9;
+    color: var(--light-text-color);
+    transition: top 0.3s ease; /* how to slide */
+    z-index: 1;
+  }
 
   #introduction-section {
     background: url(../assets/hero-cover1.jpg),
@@ -86,5 +98,81 @@
   .copyright-wrapper {
     background-color: var(--dark-background-color);
     padding: 0 17%;
+  }
+
+  .icon-section .row {
+    flex-direction: column;
+  }
+  .icon-section .col-md-4 {
+    margin-bottom: 30px;
+  }
+  .testimonials-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  .testimonials-section h2::before {
+    content: "What Clients Say";
+    display: block;
+    /* font-size: inherit; */
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-align: inherit;
+    visibility: visible;
+  }
+  .testimonials-section h2 {
+    visibility: hidden;
+  }
+  .testimonials-section p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: white;
+  }
+  .testimonial-card {
+    padding: 20px;
+    margin-bottom: 30px !important;
+  }
+  .testimonials-section .user-icon {
+    display: none;
+  }
+  .testimonials-section .card-body {
+    gap: 20px;
+  }
+  .project-card h5 {
+    font-weight: 700;
+  }
+  .industry-section h2 {
+    visibility: hidden; /* hide original text */
+    position: relative;
+    margin: 0 auto; /* Center align the pseudo-element */
+    width: 50%;
+  }
+  .industry-section h2::before {
+    content: "We Are Optimists Who Love To Work Together";
+    visibility: visible;
+    position: relative;
+    display: block;
+    font-size: 32px; /* text size for mobile */
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.5; /* improve readability */
+    width: 100%;
+    /* margin: 0 auto 30px;  */
+    word-wrap: break-word;
+  }
+  .industry-section {
+    padding-top: 140px; /* space above the content */
+    padding-bottom: 40px; /* maintain bottom spacing */
+  }
+  .industry-section p {
+    margin-top: 20px;
+    text-align: center; /* center-align the paragraph */
+    max-width: 200px;
+  }
+
+  .icon-section {
+    min-height: 950px;
+    padding: 15% 0;
   }
 }
